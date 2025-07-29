@@ -22,12 +22,15 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
+          <Link to="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <Zap className="h-8 w-8 text-primary group-hover:text-primary-glow transition-all duration-300" />
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-md group-hover:blur-lg transition-all duration-300" />
+              <img 
+                src="/lovable-uploads/c7dd7279-3fad-4090-910a-6b003453a8f8.png" 
+                alt="Code Envision Logo" 
+                className="h-10 w-auto group-hover:scale-105 transition-all duration-300"
+              />
+              <div className="absolute inset-0 bg-primary/10 rounded-lg blur-sm group-hover:blur-md transition-all duration-300" />
             </div>
-            <span className="text-xl font-bold text-gradient">Code Envision</span>
           </Link>
 
           {/* Desktop Navigation */}
