@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Code Envision - Futuristic AI Tech Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Background & Foreground */
+    --background: 222 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card Components */
+    --card: 220 71% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover Components */
+    --popover: 220 71% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Primary Brand Colors - Electric Blue */
+    --primary: 217 91% 60%;
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 217 91% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Deep Tech Blue */
+    --secondary: 220 71% 8%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Elements */
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Cyan Tech */
+    --accent: 189 100% 56%;
+    --accent-foreground: 220 71% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Destructive */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* UI Elements */
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 217 91% 60%;
 
-    --radius: 0.5rem;
+    /* Neural Network Colors */
+    --neural-primary: 217 91% 60%;
+    --neural-secondary: 189 100% 56%;
+    --neural-tertiary: 271 91% 65%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60% / 0.2), hsl(189 100% 56% / 0.1));
+    --gradient-neural: linear-gradient(45deg, hsl(217 91% 60%), hsl(189 100% 56%), hsl(271 91% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(220 71% 8% / 0.8), hsl(217 32% 17% / 0.4));
+
+    /* Shadows & Effects */
+    --shadow-neural: 0 0 30px hsl(217 91% 60% / 0.3);
+    --shadow-glow: 0 10px 40px hsl(217 91% 60% / 0.2);
+    --shadow-card: 0 8px 32px hsl(220 71% 8% / 0.8);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-neural: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +127,79 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+
+  /* Neural Network Animations */
+  @keyframes neural-pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  @keyframes neural-flow {
+    0% { transform: translateX(-100%) translateY(-100%); }
+    100% { transform: translateX(100vw) translateY(100vh); }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: var(--shadow-neural); }
+    50% { box-shadow: var(--shadow-glow); }
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Custom Utility Classes */
+  .neural-pulse {
+    animation: neural-pulse 2s ease-in-out infinite;
+  }
+
+  .neural-flow {
+    animation: neural-flow 8s linear infinite;
+  }
+
+  .glow-pulse {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+
+  .gradient-shift {
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  .text-gradient {
+    background: var(--gradient-neural);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--secondary));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary-glow));
   }
 }
