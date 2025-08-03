@@ -27,7 +27,7 @@ export const Navigation = () => {
               <img 
                 src="/lovable-uploads/c7dd7279-3fad-4090-910a-6b003453a8f8.png" 
                 alt="Code Envision Logo" 
-                className="h-16 w-auto group-hover:scale-105 transition-all duration-300"
+                className="h-24 w-auto group-hover:scale-105 transition-all duration-300"
               />
               <div className="absolute inset-0 bg-primary/10 rounded-lg blur-sm group-hover:blur-md transition-all duration-300" />
             </div>
