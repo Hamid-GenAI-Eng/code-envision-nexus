@@ -1,4 +1,5 @@
 import { Users, Target, Eye, Award, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Footer from '@/components/Footer';
@@ -54,6 +55,8 @@ const values = [
 ];
 
 const WhoWeAre = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen pt-24 pb-16">
       {/* Hero Section */}
@@ -189,7 +192,7 @@ const WhoWeAre = () => {
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
             Let's discuss how our expertise can help bring your vision to life.
           </p>
-          <Button size="lg" className="text-lg px-8 py-6 glow-pulse">
+          <Button size="lg" className="text-lg px-8 py-6 glow-pulse" onClick={() => navigate('/contact')}>
             Get In Touch
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>

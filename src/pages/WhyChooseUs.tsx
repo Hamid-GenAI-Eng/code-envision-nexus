@@ -1,4 +1,5 @@
 import { Shield, Zap, Users, Trophy, Clock, Globe, Brain, Star } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Footer from '@/components/Footer';
@@ -91,6 +92,8 @@ const testimonials = [
 ];
 
 const WhyChooseUs = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen pt-24 pb-16">
       {/* Hero Section */}
@@ -249,10 +252,10 @@ const WhyChooseUs = () => {
             Join hundreds of satisfied clients who have transformed their businesses with our AI solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6 glow-pulse">
+            <Button size="lg" className="text-lg px-8 py-6 glow-pulse" onClick={() => navigate('/contact')}>
               Start Your Project
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => navigate('/contact')}>
               Schedule a Call
             </Button>
           </div>

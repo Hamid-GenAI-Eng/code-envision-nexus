@@ -1,4 +1,5 @@
 import { Rocket, Zap, Brain, Database, Shield, Bot, ArrowRight, Check, Star } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -113,6 +114,8 @@ const testimonials = [
 ];
 
 const Products = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen pt-24 pb-16">
       {/* Hero Section */}
@@ -177,7 +180,7 @@ const Products = () => {
                         Try Free Trial
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
-                      <Button variant="outline" size="lg" onClick={() => window.location.href = `/products/${product.id}`}>
+                      <Button variant="outline" size="lg" onClick={() => navigate(`/products/${product.id}`)}>
                         View Details
                       </Button>
                     </div>
@@ -249,7 +252,7 @@ const Products = () => {
                     <Button variant="default" size="sm" className="flex-1">
                       Get Started
                     </Button>
-                    <Button variant="outline" size="sm" onClick={() => window.location.href = `/products/${product.id}`}>
+                    <Button variant="outline" size="sm" onClick={() => navigate(`/products/${product.id}`)}>
                       Learn More
                     </Button>
                   </div>

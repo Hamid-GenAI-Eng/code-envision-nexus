@@ -1,6 +1,7 @@
 import { ArrowRight, Brain, Code, Zap, Rocket, Shield, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { useNavigate } from 'react-router-dom';
 import { NeuralBackground } from '@/components/NeuralBackground';
 import { ClientLogoSlider } from '@/components/ClientLogoSlider';
 import { SupportChat } from '@/components/SupportChat';
@@ -61,6 +62,8 @@ const projects = [
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="relative min-h-screen">
       <NeuralBackground />
@@ -79,11 +82,11 @@ const Home = () => {
               with cutting-edge AI, machine learning, and intelligent automation solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-6 glow-pulse">
+              <Button size="lg" className="text-lg px-8 py-6 glow-pulse" onClick={() => navigate('/contact')}>
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => navigate('/projects')}>
                 View Our Work
               </Button>
             </div>
@@ -186,7 +189,7 @@ const Home = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" onClick={() => navigate('/projects')}>
               View All Projects
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -203,7 +206,7 @@ const Home = () => {
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
             Let's discuss how our AI and software solutions can drive your business forward.
           </p>
-          <Button size="lg" className="text-lg px-8 py-6 glow-pulse">
+          <Button size="lg" className="text-lg px-8 py-6 glow-pulse" onClick={() => navigate('/contact')}>
             Get Started Today
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>

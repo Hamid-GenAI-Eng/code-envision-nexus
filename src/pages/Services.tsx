@@ -1,4 +1,5 @@
 import { Code, Brain, Zap, Database, Shield, Cloud, Smartphone, Globe, ArrowRight, Check } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -213,6 +214,8 @@ const Industries = () => {
 };
 
 const Services = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen pt-24 pb-16">
       {/* Hero Section */}
@@ -299,7 +302,7 @@ const Services = () => {
                     <span className="text-xs text-muted-foreground">Timeline</span>
                     <span className="text-accent text-xs">{service.timeline}</span>
                   </div>
-                  <Button variant="outline" size="sm" className="w-full">
+                  <Button variant="outline" size="sm" className="w-full" onClick={() => navigate('/contact')}>
                     Get Quote
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -356,11 +359,11 @@ const Services = () => {
             Let's discuss your project requirements and create a custom solution for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6 glow-pulse">
+            <Button size="lg" className="text-lg px-8 py-6 glow-pulse" onClick={() => navigate('/contact')}>
               Get Free Quote
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => navigate('/contact')}>
               Schedule Consultation
             </Button>
           </div>

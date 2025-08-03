@@ -1,4 +1,5 @@
 import { ExternalLink, Github, ArrowRight, Brain, Code, Zap, Database, Eye, Bot, Shield } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -94,6 +95,8 @@ const projects = [
 const categories = ['All', 'Healthcare AI', 'Enterprise AI', 'Document AI', 'NLP & Chatbots', 'Financial AI', 'IoT & AI'];
 
 const Projects = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen pt-24 pb-16">
       {/* Hero Section */}
@@ -161,7 +164,7 @@ const Projects = () => {
                     </div>
                     
                   <div className="flex gap-4">
-                    <Button variant="default" size="sm" onClick={() => window.location.href = `/projects/${project.id}`}>
+                    <Button variant="default" size="sm" onClick={() => navigate(`/projects/${project.id}`)}>
                       View Details
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
