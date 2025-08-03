@@ -1,6 +1,7 @@
 import { Shield, Zap, Users, Trophy, Clock, Globe, Brain, Star } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import Footer from '@/components/Footer';
 
 const advantages = [
   {
@@ -257,6 +258,8 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

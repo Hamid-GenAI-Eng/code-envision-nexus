@@ -1,6 +1,7 @@
 import { Users, Target, Eye, Award, ArrowRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import Footer from '@/components/Footer';
 
 const team = [
   {
@@ -194,6 +195,8 @@ const WhoWeAre = () => {
           </Button>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

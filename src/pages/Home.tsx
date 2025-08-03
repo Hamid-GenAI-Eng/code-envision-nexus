@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/card';
 import { NeuralBackground } from '@/components/NeuralBackground';
 import { ClientLogoSlider } from '@/components/ClientLogoSlider';
 import { SupportChat } from '@/components/SupportChat';
+import Footer from '@/components/Footer';
 
 const services = [
   {
@@ -211,6 +212,9 @@ const Home = () => {
 
       {/* Support Chat */}
       <SupportChat />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

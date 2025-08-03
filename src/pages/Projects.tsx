@@ -2,6 +2,7 @@ import { ExternalLink, Github, ArrowRight, Brain, Code, Zap, Database, Eye, Bot,
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import Footer from '@/components/Footer';
 
 const projects = [
   {
@@ -159,16 +160,16 @@ const Projects = () => {
                       ))}
                     </div>
                     
-                    <div className="flex gap-4">
-                      <Button variant="default" size="sm">
-                        View Details
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                      <Button variant="outline" size="sm">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Button>
-                    </div>
+                  <div className="flex gap-4">
+                    <Button variant="default" size="sm" onClick={() => window.location.href = `/projects/${project.id}`}>
+                      View Details
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                    <Button variant="outline" size="sm">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </Button>
+                  </div>
                   </div>
                   
                   <div>
@@ -294,6 +295,8 @@ const Projects = () => {
           </Button>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import { Code, Brain, Zap, Database, Shield, Cloud, Smartphone, Globe, ArrowRigh
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import Footer from '@/components/Footer';
 
 const services = [
   {
@@ -365,6 +366,8 @@ const Services = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

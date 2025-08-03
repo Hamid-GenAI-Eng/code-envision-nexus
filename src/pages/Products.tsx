@@ -2,6 +2,7 @@ import { Rocket, Zap, Brain, Database, Shield, Bot, ArrowRight, Check, Star } fr
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import Footer from '@/components/Footer';
 
 const products = [
   {
@@ -176,8 +177,8 @@ const Products = () => {
                         Try Free Trial
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </Button>
-                      <Button variant="outline" size="lg">
-                        View Demo
+                      <Button variant="outline" size="lg" onClick={() => window.location.href = `/products/${product.id}`}>
+                        View Details
                       </Button>
                     </div>
                   </div>
@@ -244,14 +245,14 @@ const Products = () => {
                   </div>
                 </div>
                 
-                <div className="flex gap-3">
-                  <Button variant="default" size="sm" className="flex-1">
-                    Get Started
-                  </Button>
-                  <Button variant="outline" size="sm">
-                    Learn More
-                  </Button>
-                </div>
+                  <div className="flex gap-3">
+                    <Button variant="default" size="sm" className="flex-1">
+                      Get Started
+                    </Button>
+                    <Button variant="outline" size="sm" onClick={() => window.location.href = `/products/${product.id}`}>
+                      Learn More
+                    </Button>
+                  </div>
               </Card>
             ))}
           </div>
@@ -316,6 +317,8 @@ const Products = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };
