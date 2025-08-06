@@ -45,19 +45,29 @@ const whyChooseUs = [
 
 const projects = [
   {
-    title: 'AI-Powered Analytics Platform',
-    description: 'Real-time data processing with machine learning insights',
-    tech: ['Python', 'TensorFlow', 'React', 'AWS']
+    title: 'Wukala-GPT',
+    description: 'AI-powered lawyer platform for legal assistance',
+    tech: ['AI/ML', 'React', 'Node.js', 'GPT']
   },
   {
-    title: 'Smart Automation System',
-    description: 'Intelligent workflow automation for enterprise clients',
-    tech: ['Node.js', 'AI/ML', 'Docker', 'Kubernetes']
+    title: 'Healwise Patient Hub',
+    description: 'Comprehensive healthcare platform for patient management',
+    tech: ['React', 'Node.js', 'Healthcare API', 'MongoDB']
   },
   {
-    title: 'Computer Vision Application',
-    description: 'Advanced image recognition and processing solution',
-    tech: ['OpenCV', 'Deep Learning', 'FastAPI', 'Vue.js']
+    title: 'Pulse CRM',
+    description: 'Advanced CRM system to manage company data and operations',
+    tech: ['React', 'Express', 'PostgreSQL', 'Analytics']
+  },
+  {
+    title: 'Al-nukhwa',
+    description: 'Traditional medicine platform for desi healthcare solutions',
+    tech: ['React', 'Node.js', 'Medicine API', 'Payment Gateway']
+  },
+  {
+    title: 'RoommatchPK',
+    description: 'Real estate platform for property management and matching',
+    tech: ['React', 'Real Estate API', 'Maps Integration', 'Firebase']
   }
 ];
 
