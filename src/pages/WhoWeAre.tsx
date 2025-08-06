@@ -158,18 +158,24 @@ const WhoWeAre = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="p-6 card-gradient border-border hover:border-primary/50 transition-all duration-300 group text-center">
-                <div className="w-24 h-24 bg-gradient-neural rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-background">
-                  {member.name.split(' ').map(n => n[0]).join('')}
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-foreground">{member.name}</h3>
-                <p className="text-primary font-semibold mb-2">{member.role}</p>
-                <p className="text-sm text-accent mb-3">{member.expertise}</p>
-                <p className="text-xs text-muted-foreground leading-relaxed">{member.bio}</p>
-              </Card>
-            ))}
+          <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 gap-12 max-w-4xl">
+              {team.map((member, index) => (
+                <Card key={index} className="p-8 card-gradient border-border hover:border-primary/50 transition-all duration-300 group text-center">
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20">
+                    <img 
+                      src={index === 0 ? "/lovable-uploads/de0150bb-e60b-4123-85f8-fde0edbf44ac.png" : "/lovable-uploads/46207957-a428-49af-a67e-23c2cfe96de4.png"} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3 text-foreground">{member.name}</h3>
+                  <p className="text-primary font-semibold mb-3 text-lg">{member.role}</p>
+                  <p className="text-accent mb-4 font-medium">{member.expertise}</p>
+                  <p className="text-muted-foreground leading-relaxed">{member.bio}</p>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
