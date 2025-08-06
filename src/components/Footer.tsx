@@ -65,15 +65,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">info@codeenvision.com</span>
+                <span className="text-sm">info.codeenvision@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">+92 326 2581522</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span className="text-sm">Tech Hub, Innovation District</span>
+                <span className="text-sm">College Road, Lahore</span>
               </div>
             </div>
             
@@ -95,7 +95,7 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm">
-              © 2024 Code Envision. All rights reserved.
+              © 2025 Code Envision. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">

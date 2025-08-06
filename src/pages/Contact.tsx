@@ -13,25 +13,25 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email Us',
-    details: 'hello@codeenvision.com',
+    details: 'info.codeenvision@gmail.com',
     description: 'Send us an email anytime'
   },
   {
     icon: Phone,
     title: 'Call Us',
-    details: '+1 (555) 123-4567',
-    description: 'Mon-Fri from 8am to 6pm'
+    details: '+92 326 2581522',
+    description: 'Mon-Fri from 9am to 6pm'
   },
   {
     icon: MapPin,
     title: 'Visit Us',
-    details: '123 Innovation Drive, Tech City, TC 12345',
+    details: 'College Road, Lahore, Pakistan',
     description: 'Our headquarters'
   },
   {
     icon: Clock,
     title: 'Business Hours',
-    details: 'Mon-Fri: 8:00 AM - 6:00 PM',
+    details: 'Mon-Fri: 9:00 AM - 6:00 PM',
     description: 'Weekend support available'
   }
 ];
@@ -44,22 +44,10 @@ const socialLinks = [
 
 const offices = [
   {
-    city: 'San Francisco',
-    address: '123 Innovation Drive, San Francisco, CA 94105',
-    phone: '+1 (555) 123-4567',
-    email: 'sf@codeenvision.com'
-  },
-  {
-    city: 'New York',
-    address: '456 Tech Avenue, New York, NY 10001',
-    phone: '+1 (555) 987-6543',
-    email: 'ny@codeenvision.com'
-  },
-  {
-    city: 'London',
-    address: '789 Digital Street, London, UK EC2A 4NE',
-    phone: '+44 20 7123 4567',
-    email: 'london@codeenvision.com'
+    city: 'Lahore',
+    address: 'College Road, Lahore, Pakistan',
+    phone: '+92 326 2581522',
+    email: 'info.codeenvision@gmail.com'
   }
 ];
 

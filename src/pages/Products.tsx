@@ -8,88 +8,110 @@ import Footer from '@/components/Footer';
 const products = [
   {
     id: 1,
-    name: 'AI Analytics Pro',
-    category: 'Analytics Platform',
+    name: 'Wukala-GPT',
+    category: 'Legal Technology',
     icon: Brain,
-    description: 'Advanced AI-powered analytics platform for real-time business intelligence and predictive insights.',
+    description: 'AI-powered lawyer platform that revolutionizes legal practice with intelligent case management and automated legal research.',
     features: [
-      'Real-time data processing',
-      'Predictive analytics',
-      'Custom dashboards',
-      'API integrations',
-      'Machine learning models',
-      'Advanced reporting'
+      'Automated legal research',
+      'Case management system',
+      'Document generation',
+      'Client communication portal',
+      'Legal analytics',
+      'Compliance tracking'
     ],
     pricing: {
-      starter: { price: '$299', features: ['Up to 10K records', 'Basic analytics', 'Email support'] },
-      pro: { price: '$899', features: ['Up to 100K records', 'Advanced AI', 'Priority support', 'Custom models'] },
-      enterprise: { price: 'Custom', features: ['Unlimited records', 'White-label', '24/7 support', 'On-premise'] }
+      starter: { price: 'Contact', features: ['Basic legal research', 'Document templates', 'Email support'] },
+      pro: { price: 'Contact', features: ['Advanced AI research', 'Case analytics', 'Priority support'] },
+      enterprise: { price: 'Contact', features: ['Custom integrations', 'White-label', '24/7 support'] }
     },
     image: '/api/placeholder/600/400',
     featured: true
   },
   {
     id: 2,
-    name: 'SmartBot Builder',
-    category: 'Conversational AI',
-    icon: Bot,
-    description: 'No-code platform to build intelligent chatbots with advanced NLP capabilities.',
+    name: 'Healwise Patient Hub',
+    category: 'Healthcare Platform',
+    icon: Shield,
+    description: 'Comprehensive healthcare platform connecting patients with medical professionals through intelligent health management.',
     features: [
-      'Drag-and-drop builder',
-      'Natural language processing',
-      'Multi-channel deployment',
-      'Analytics dashboard',
-      'Integration APIs',
-      'Voice capabilities'
+      'Patient record management',
+      'Appointment scheduling',
+      'Telemedicine integration',
+      'Health monitoring',
+      'Prescription management',
+      'Medical analytics'
     ],
     pricing: {
-      starter: { price: '$99', features: ['5 bots', 'Basic NLP', 'Web chat only'] },
-      pro: { price: '$299', features: ['25 bots', 'Advanced NLP', 'Multi-channel', 'Analytics'] },
-      enterprise: { price: 'Custom', features: ['Unlimited bots', 'Custom AI', 'White-label', 'SSO'] }
+      starter: { price: 'Contact', features: ['Basic patient management', 'Appointment booking', 'Standard support'] },
+      pro: { price: 'Contact', features: ['Advanced analytics', 'Telemedicine', 'Priority support'] },
+      enterprise: { price: 'Contact', features: ['Hospital integration', 'Custom features', 'Dedicated support'] }
     },
     image: '/api/placeholder/600/400',
     featured: true
   },
   {
     id: 3,
-    name: 'Vision API Suite',
-    category: 'Computer Vision',
-    icon: Zap,
-    description: 'Comprehensive computer vision APIs for image recognition, object detection, and analysis.',
+    name: 'Pulse CRM',
+    category: 'Business Management',
+    icon: Database,
+    description: 'Intelligent CRM platform for managing company data and operations with advanced analytics and automation.',
     features: [
-      'Object detection',
-      'Facial recognition',
-      'OCR capabilities',
-      'Image classification',
-      'Real-time processing',
-      'Custom model training'
+      'Customer relationship management',
+      'Data analytics dashboard',
+      'Operations automation',
+      'Sales pipeline tracking',
+      'Team collaboration tools',
+      'Performance insights'
     ],
     pricing: {
-      starter: { price: '$0.10', features: ['Per API call', '99.5% uptime', 'Standard support'] },
-      pro: { price: '$0.05', features: ['Bulk pricing', '99.9% uptime', 'Priority support'] },
-      enterprise: { price: 'Custom', features: ['Volume discounts', 'SLA guarantee', 'Dedicated support'] }
+      starter: { price: 'Contact', features: ['Basic CRM features', 'Data management', 'Email support'] },
+      pro: { price: 'Contact', features: ['Advanced analytics', 'Automation tools', 'Priority support'] },
+      enterprise: { price: 'Contact', features: ['Custom integrations', 'Advanced security', '24/7 support'] }
     },
     image: '/api/placeholder/600/400',
     featured: false
   },
   {
     id: 4,
-    name: 'DataFlow Platform',
-    category: 'Data Management',
-    icon: Database,
-    description: 'Intelligent data pipeline platform for ETL, data warehousing, and real-time processing.',
+    name: 'Al-nukhwa',
+    category: 'Traditional Medicine',
+    icon: Bot,
+    description: 'Traditional medicine platform connecting users with authentic Desi medicine practitioners and remedies.',
     features: [
-      'Visual pipeline builder',
-      'Real-time streaming',
-      'Data transformation',
-      'Quality monitoring',
-      'Scalable architecture',
-      'Multi-source connectors'
+      'Practitioner directory',
+      'Traditional remedy database',
+      'Consultation booking',
+      'Health assessment tools',
+      'Community forums',
+      'Educational resources'
     ],
     pricing: {
-      starter: { price: '$199', features: ['10 pipelines', 'Basic transforms', 'Email alerts'] },
-      pro: { price: '$599', features: ['100 pipelines', 'Advanced ML', 'Real-time monitoring'] },
-      enterprise: { price: 'Custom', features: ['Unlimited pipelines', 'Custom connectors', '24/7 support'] }
+      starter: { price: 'Contact', features: ['Basic directory access', 'Simple consultations', 'Standard support'] },
+      pro: { price: 'Contact', features: ['Advanced features', 'Priority listings', 'Enhanced support'] },
+      enterprise: { price: 'Contact', features: ['Custom branding', 'Advanced analytics', 'Full support'] }
+    },
+    image: '/api/placeholder/600/400',
+    featured: false
+  },
+  {
+    id: 5,
+    name: 'RoommatchPK',
+    category: 'Real Estate Platform',
+    icon: Zap,
+    description: 'Smart real estate platform for Pakistan, connecting property seekers with perfect matches through AI-powered recommendations.',
+    features: [
+      'Property matching algorithm',
+      'Virtual property tours',
+      'Price analysis tools',
+      'Location insights',
+      'Mortgage calculator',
+      'Agent network'
+    ],
+    pricing: {
+      starter: { price: 'Contact', features: ['Basic property search', 'Contact features', 'Standard support'] },
+      pro: { price: 'Contact', features: ['Advanced matching', 'Premium listings', 'Priority support'] },
+      enterprise: { price: 'Contact', features: ['White-label solution', 'Custom features', '24/7 support'] }
     },
     image: '/api/placeholder/600/400',
     featured: false

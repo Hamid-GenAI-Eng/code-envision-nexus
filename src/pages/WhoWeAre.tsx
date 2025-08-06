@@ -6,28 +6,16 @@ import Footer from '@/components/Footer';
 
 const team = [
   {
-    name: 'Alex Chen',
-    role: 'CEO & AI Architect',
-    expertise: 'Machine Learning, Deep Learning, Strategy',
-    bio: '10+ years in AI research and enterprise software development'
+    name: 'Hamid Saifullah',
+    role: 'Co-Founder & CEO',
+    expertise: 'AI Strategy, Business Development, Product Vision',
+    bio: 'Visionary leader driving AI innovation and strategic business growth since July 2025'
   },
   {
-    name: 'Sarah Rodriguez',
-    role: 'CTO & Lead Developer',
-    expertise: 'Full-Stack Development, Cloud Architecture, DevOps',
-    bio: 'Former senior engineer at top tech companies, expert in scalable systems'
-  },
-  {
-    name: 'Dr. Michael Zhang',
-    role: 'Head of AI Research',
-    expertise: 'Computer Vision, NLP, Generative AI',
-    bio: 'PhD in Computer Science, published researcher in AI conferences'
-  },
-  {
-    name: 'Emily Johnson',
-    role: 'Product Manager',
-    expertise: 'Product Strategy, UX/UI, Client Relations',
-    bio: 'Expert in translating complex technical solutions into business value'
+    name: 'Ahmed Sarfaraz Tatla',
+    role: 'Co-Founder & CTO',
+    expertise: 'Full-Stack Development, AI Architecture, Technical Leadership',
+    bio: 'Technical expert specializing in scalable AI solutions and modern software architecture since July 2025'
   }
 ];
 
@@ -111,21 +99,24 @@ const WhoWeAre = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gradient">Our Story</h2>
           <div className="text-lg text-muted-foreground leading-relaxed space-y-6">
             <p>
-              Founded in 2020, Code Envision emerged from a simple yet powerful vision: 
-              to bridge the gap between cutting-edge AI research and practical business applications. 
-              Our founders, coming from backgrounds in machine learning research and enterprise software development, 
-              recognized the immense potential of AI to transform how businesses operate.
+              Founded in July 2025, Code Envision emerged from a powerful vision shared by 
+              Hamid Saifullah and Ahmed Sarfaraz Tatla: to bridge the gap between cutting-edge 
+              AI technology and practical business solutions. Our founders, combining expertise 
+              in business strategy and technical innovation, recognized the transformative potential 
+              of AI for modern businesses.
             </p>
             <p>
-              What started as a small team of passionate developers and AI researchers has grown into 
-              a comprehensive technology partner for businesses across industries. We've successfully 
-              delivered over 100 projects, ranging from simple web applications to complex AI systems 
-              that process millions of data points in real-time.
+              From the beginning, we focused on creating real-world solutions that make a difference. 
+              Our portfolio includes innovative platforms like Wukala-GPT for legal professionals, 
+              Healwise Patient Hub for healthcare, Pulse CRM for business management, Al-nukhwa for 
+              traditional medicine, and RoommatchPK for real estate - each designed to solve specific 
+              industry challenges.
             </p>
             <p>
-              Today, Code Envision stands at the forefront of the AI revolution, continuing to push 
-              boundaries and create solutions that were once thought impossible. Our commitment to 
-              innovation, quality, and client success remains unwavering as we shape the future of technology.
+              Today, Code Envision stands as a testament to Pakistani innovation in the global tech 
+              landscape. We continue to push boundaries and create solutions that empower businesses 
+              across various sectors, maintaining our commitment to excellence and transformative 
+              technology solutions.
             </p>
           </div>
         </div>
